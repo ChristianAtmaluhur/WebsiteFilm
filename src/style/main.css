@@ -1,0 +1,144 @@
+body {
+    background: #FFF8EA;
+    margin-bottom: 100px;
+}
+
+.navbar-brand {
+    color: #594545;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #9E7676;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #815B5B;
+}
+
+.navbar-nav .nav-link.active {
+    color: #815B5B;
+}
+
+.navbar-toggler {
+    color: #815B5B ;
+}
+
+.form-control {
+    border-color: #594545;
+}
+
+form>.btn {
+    border: 1px solid #815B5B;
+    color: #815B5B;
+}
+
+form>.btn:hover {
+    background-color: #815B5B;
+    color: #fff;
+}
+
+.dropdown-item {
+    color: #9E7676;
+}
+
+.dropdown-item:hover {
+    color: #815B5B;
+}
+
+main {
+    padding-inline: 48px;
+}
+
+.card-container {
+    display: grid;
+    width: 100%;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.card-img-top {
+    border-radius: 5px;
+    height: 100%;
+}
+
+.card>.badge {
+    top: 10px;
+    right: 10px;
+}
+
+/* Desktop Responsive */
+@media (min-width: 45em) {
+    .navbar-brand {
+        font-size: 36px;
+    }
+
+    .nav-link {
+        font-size: 24px;
+    }
+
+    .dropdown-item {
+        font-size: 20px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 35em) {
+    .navbar-brand {
+        font-size: 26px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .dropdown-item {
+        font-size: 12px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 30em) {
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 35em) and (max-width: 45em) {
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .dropdown-item {
+        font-size: 16px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
